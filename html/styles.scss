@@ -22,11 +22,12 @@ $red:     #CF4446 !default;
 $orange:  #EE6A24 !default;
 $light-orange:  #FB9E07 !default;
 $yellow:  #F6D645 !default;
-$green:   #118230 !default;
+$light-green:   #e3faef !default;
+$light-green:   #e3faef !default;
 $teal:    #068194 !default;
 $cyan:    #3093CF !default;
-
-$primary:   $light-orange!default;
+$green:   #118230 !default;
+$primary:   $teal!default;
 $secondary: $gray-700 !default;
 $success:   $green !default;
 $info:      $cyan !default;
@@ -40,11 +41,10 @@ $dark:      $black !default;
 // Links
 $link-color: $primary !default;
 $link-decoration: none !default;
-$link-hover-color: $red !default;
+$link-hover-color: $cyan !default;
 $link-hover-decoration: underline !default;
 
 // Footer
-$footer-bg: $gray-900 !default;
 $footer-fg: $gray-300 !default;
 
 // Inline code

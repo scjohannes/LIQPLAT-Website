@@ -1,0 +1,86 @@
+---
+title: "Meet the Group"
+listing:
+  - id: pi
+    include: 
+      people_group: "pi"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: clinician
+    include: 
+      people_group: "clinician"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: phd
+    include: 
+      people_group: "phd"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last    
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: methodologist
+    include: 
+      people_group: "methodologist"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: statistician
+    include: 
+      people_group: "statistician"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
+page-layout: full
+---
+
+## Principal Investigator
+
+
+::: {#pi}
+:::
+
+
+:::{.sand-background}
+## Clinicians
+
+
+
+::: {#clinician}
+:::
+
+:::
+
+## PhD Students
+
+::: {#phd}
+:::
+
+:::{.sand-background}
+## Methologists
+
+
+
+::: {#methodologist}
+:::
+
+:::
+
+## Statisticians
+
+::: {#statistician}
+:::

@@ -12,6 +12,8 @@ website:
     
     # sub-pages
     left:
+      - text: "People"
+        href: people/index.qmd
       - text: "Publications"
         href: publications/index.qmd
       - text: "Recruitment"
@@ -20,11 +22,10 @@ website:
         href: cv/index.qmd
       - text: "About"
         href: about/index.qmd
+      
     
 
     right:
-      - icon: twitter
-        href: https://twitter.com/MarvinSchmittML
       - icon: envelope
         aria-label: email
         href: "mailto:johannesmanteo.schwenke@usb.ch"  
@@ -61,6 +62,7 @@ format:
     theme: 
       - pulse
       - html/styles.scss
+    mainfont: Lato
     toc: false
     code-link: true
     anchor-sections: true

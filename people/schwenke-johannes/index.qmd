@@ -1,0 +1,41 @@
+---
+title: &TITLE Johannes Schwenke
+last: Schwenke
+first: Johannes M
+people_group: "phd"
+email: "johannesmanteo.schwenke@usb.ch"
+education:
+  - MD | University of Basel | 2022
+subtitle: "PhD Student in Clinical Epidemiology"
+description: "Test"
+project: "dmref"
+affiliation: University of Basel
+image: avatar.png
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:johannesmanteo.schwenke@usb.ch 
+    - text: Google Scholar
+      icon: mortarboard 
+      href: https://scholar.google.com/citations?view_op=list_works&hl=en&user=42OQe1kAAAAJ
+    - icon: github
+      text: GitHub 
+      href: https://github.com/scjohannes
+---
+<hr>
+::: {#about}
+
+
+
+Lorem ipsum...
+
+## Education
+
+{{< meta education >}}
+:::
