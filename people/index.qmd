@@ -71,7 +71,7 @@ page-layout: full
 :::
 
 :::{.sand-background}
-## Methologists
+## Methodologists
 
 
 

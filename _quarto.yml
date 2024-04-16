@@ -18,8 +18,6 @@ website:
         href: publications/index.qmd
       - text: "Recruitment"
         href: recruitment/index.qmd
-      - text: "CV"
-        href: cv/index.qmd
       - text: "About"
         href: about/index.qmd
       

@@ -1,0 +1,38 @@
+---
+title: &TITLE Andreas Michael Schmitt
+last: Schmitt
+first: Andreas Michael
+people_group: "clinician"
+email: "andreasmichael.schmitt@usb.ch"
+education:
+  - MD | University of XXXXX | 2014
+subtitle: "Junior Attending Physician (Medical Oncology)"
+description: ""
+project: "dmref"
+affiliation: University Hospital Basel
+image: avatar.png
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:andreasmichael.schmitt@usb.ch 
+    - text: Google Scholar
+      icon: mortarboard 
+      href: https://scholar.google.com/citations?user=K9VQ-54AAAAJ&hl=en&oi=ao
+---
+<hr>
+::: {#about}
+
+
+
+Lorem ipsum...
+
+## Education
+
+{{< meta education >}}
+:::

@@ -102,9 +102,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-email","listing-education","listing-subtitle","listing-description","listing-affiliation","listing-image","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -244,10 +244,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Recruitment</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv/index.html" rel="" target="">
- <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../about/index.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
@@ -327,6 +323,26 @@ No matching items
 <div id="listing-clinician" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
   <div class="list grid quarto-listing-cols-3"> 
+    <div class="g-col-1 listing-box">
+      <a href="../people/schmitt-andreas/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          <p class="card-img-top">
+            <img alt="Andreas Michael Schmitt" src="../people/schmitt-andreas/avatar.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          <div class="card-body post-contents">
+            <div class="listing-box-title">
+              Andreas Michael Schmitt<br> 
+            </div>
+            <div class="listing-box-subtitle">
+              Junior Attending Physician (Medical Oncology)<br>
+            </div>
+              <div class="listing-box-education">
+                  MD | University of XXXXX | 2014<br>
+              </div>  
+          </div>  
+        </div>  
+      </a>
+    </div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -366,8 +382,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="methologists" class="level2 sand-background">
-<h2 class="anchored" data-anchor-id="methologists">Methologists</h2>
+<section id="methodologists" class="level2 sand-background">
+<h2 class="anchored" data-anchor-id="methodologists">Methodologists</h2>
 <div id="listing-methodologist" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
   <div class="list grid quarto-listing-cols-3"> 
