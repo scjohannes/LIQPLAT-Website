@@ -158,9 +158,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-email","listing-education","listing-subtitle","listing-description","listing-affiliation","listing-image","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -387,6 +387,46 @@ No matching items
 <div id="listing-methodologist" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
   <div class="list grid quarto-listing-cols-3"> 
+    <div class="g-col-1 listing-box">
+      <a href="../people/hemkens-lars/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          <p class="card-img-top">
+            <img alt="Lars G. Hemkens" src="../people/hemkens-lars/avatar.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          <div class="card-body post-contents">
+            <div class="listing-box-title">
+              Lars G. Hemkens<br> 
+            </div>
+            <div class="listing-box-subtitle">
+              Senior Scientist, Department of Clinical Research, University of Basel <br> Lead Pragmatic Trials and Real World Evidence <br> RC2NB - Research Center for Clinical Neuroimmunology and Neuroscience Basel<br>
+            </div>
+              <div class="listing-box-education">
+                  MD | The Philipp University of Marburg | XXXX <br> MPH | University of Düsseldorf | XXXX<br>
+              </div>  
+          </div>  
+        </div>  
+      </a>
+    </div>
+    <div class="g-col-1 listing-box">
+      <a href="../people/perrine-janiaud/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          <p class="card-img-top">
+            <img alt="Perrine Janiaud" src="../people/perrine-janiaud/avatar.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          <div class="card-body post-contents">
+            <div class="listing-box-title">
+              Perrine Janiaud<br> 
+            </div>
+            <div class="listing-box-subtitle">
+              Research Fellow <br> Department of Clinical Research, University of Basel <br><br>
+            </div>
+              <div class="listing-box-education">
+                  PhD | Université Claude Bernard, Lyon, France | 2017 <br><br>
+              </div>  
+          </div>  
+        </div>  
+      </a>
+    </div>
 </div>
 </div>
 <div class="listing-no-matching d-none">

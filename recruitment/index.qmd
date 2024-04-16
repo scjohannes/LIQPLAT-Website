@@ -1,5 +1,6 @@
 ---
 title: "Recruitment"
+format: html
 execute: 
   echo: false  
 ---
@@ -8,33 +9,51 @@ execute:
 #| label: load-packages
 #| include: false
 
-library(tidyverse)
-library(plotly)
+library(ggokabeito)
+
+options(
+  # set default colors in ggplot2 to colorblind-friendly
+  # Okabe-Ito and Viridis palettes
+  ggplot2.discrete.colour = ggokabeito::palette_okabe_ito(),
+  ggplot2.discrete.fill = ggokabeito::palette_okabe_ito(),
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.fill = "viridis",
+  # set theme font and size
+  book.base_family = "sans",
+  book.base_size = 14
+)
+
+library(ggplot2)
+library(dplyr)
+
+# set default theme
+theme_set(
+  theme_minimal(
+    base_size = getOption("book.base_size"),
+    base_family = getOption("book.base_family")
+  ) %+replace%
+    theme(
+      panel.grid.minor = element_blank(),
+      legend.position = "bottom"
+    )
+)
 ```
 
-As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.
+Lorem ipsum.
 
 ```{r}
 time <- seq(as.Date("2024-05-01"), as.Date("2024-12-31"), by = "months")
-recruited <- seq(from = 0, to = 70, by = 10)
+recruited <- seq(from = 10, to = 80, by = 10)
 
 plot <- ggplot(tibble(time, recruited), aes(x = time, y = recruited)) +
-  geom_point(color = "orange") +
-  geom_line(color = "orange") + 
-  geom_area(alpha = 1/2, fill = "orange") +
+  geom_bar(stat="identity") +
   scale_x_date(date_breaks = "2 month", date_labels =  "%b %Y") +
-  ylab("Number of patients recruited")
-  
+  ylab("Cumulative number of patients recruited")
 
-ggplotly(plot)
+plot
 ```
 
 ::: {layout-ncol="2"}
 Lorem ipsum....
 :::
 
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```

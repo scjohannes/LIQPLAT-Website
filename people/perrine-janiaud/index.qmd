@@ -1,0 +1,38 @@
+---
+title: &TITLE Perrine Janiaud
+last: Janiaud
+first: Perrine
+people_group: "methodologist"
+email: "PerrineMarineCharlotte.Janiaud@usb.ch"
+education:
+  - PhD | Université Claude Bernard, Lyon, France | 2017 <br> 
+subtitle: "Research Fellow <br> Department of Clinical Research, University of Basel <br>"
+description: ""
+project: ""
+affiliation: University Hospital Basel
+image: avatar.png
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:PerrineMarineCharlotte.Janiaud@usb.ch
+    - text: Google Scholar
+      icon: mortarboard 
+      href: https://scholar.google.com/citations?user=UclLpYIAAAAJ&hl=en
+---
+<hr>
+::: {#about}
+
+
+
+Perrine Janiaud, PhD, is a clinical epidemiologist whose work focuses mainly on clinical trial methodology, more specifically pragmatic trial and more broadly how evidence is being generated in clinical trials and then transposed to clinical settings. Before joining the University Hospital Basel, she was a postdoctoral fellow at the Meta-Research Innovation Center at Stanford (METRICS). There she conducted various meta-research projects on how research is being conducted, interpreted and reported, and how the evidence is then used by regulatory agencies. Building on her various research and scientific interests, Dr Janiaud actively participates in designing and coordinating investigator-initiated trials with the aim of generating evidence most useful for patients. She is currently the scientific coordinator of MultiSCRIPT – a pragmatic platform trial embedded within the Swiss MS Cohort. She is also the principal investigator for the CIEL- Library, a living library on cancer immunotherapy evidence aiming to efficiently identify the evidence most relevant to a given patient and thus informing therapeutic decisions.
+
+## Education
+
+{{< meta education >}}
+:::

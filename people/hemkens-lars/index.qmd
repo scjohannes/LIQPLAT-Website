@@ -1,0 +1,40 @@
+---
+title: &TITLE Lars G. Hemkens
+last: Hemkens
+first: Lars G.
+people_group: "methodologist"
+email: "lars.hemkens@usb.ch"
+education:
+  - MD | The Philipp University of Marburg | XXXX <br> MPH | University of Düsseldorf | XXXX
+subtitle: "Senior Scientist, Department of Clinical Research, University of Basel <br>
+Lead Pragmatic Trials and Real World Evidence <br>
+RC2NB - Research Center for Clinical Neuroimmunology and Neuroscience Basel"
+description: ""
+project: ""
+affiliation: University of Basel
+image: avatar.png
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:lars.hemkens@usb.ch 
+    - text: Google Scholar
+      icon: mortarboard 
+      href: https://scholar.google.com/citations?user=dAVerHUAAAAJ&hl=en
+---
+<hr>
+::: {#about}
+
+
+
+Lorem ipsum...
+
+## Education
+
+{{< meta education >}}
+:::

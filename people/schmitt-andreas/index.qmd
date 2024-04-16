@@ -8,7 +8,7 @@ education:
   - MD | University of XXXXX | 2014
 subtitle: "Junior Attending Physician (Medical Oncology)"
 description: ""
-project: "dmref"
+project: ""
 affiliation: University Hospital Basel
 image: avatar.png
 page-layout: full
