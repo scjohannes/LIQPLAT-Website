@@ -2,7 +2,7 @@
 title: &TITLE Andreas Michael Schmitt
 last: Schmitt
 first: Andreas Michael
-people_group: "clinician"
+people_group: "copi"
 email: "andreasmichael.schmitt@usb.ch"
 education:
   - MD | University of XXXXX | 2014

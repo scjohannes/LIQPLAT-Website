@@ -2,7 +2,7 @@
 title: &TITLE Johannes Schwenke
 last: Schwenke
 first: Johannes M
-people_group: "phd"
+people_group: "copi"
 email: "johannesmanteo.schwenke@usb.ch"
 education:
   - MD | University of Basel | 2022

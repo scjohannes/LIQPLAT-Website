@@ -1,0 +1,38 @@
+---
+title: &TITLE Matthias Briel
+last: Briel
+first: Matthias
+people_group: "methodologist"
+email: "matthias.briel@usb.ch"
+education:
+  - PhD | University of Basel | 2018 <br> MSc | McMaster University | 2008 <br> MD | University of Freiburg | 2000
+subtitle: "Deputy Director of the Department of Clinical Research, University Hospital Basel"
+description: ""
+project: ""
+affiliation: University Hospital Basel
+image: avatar.png
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:matthias.briel@usb.ch
+    - text: Google Scholar
+      icon: mortarboard 
+      href: https://scholar.google.com/citations?user=QX74YwIAAAAJ&hl=de
+---
+<hr>
+::: {#about}
+
+
+
+Matthias Briel is a physician and clinical epidemiologist with a strong interest in clinical trial methodology and meta-epidemiological research. He received his Dr. med. from the University of Freiburg for electrophysiological work on cystic fibrosis in 2000, completed an MSc in Health Research Methodology at McMaster University in Hamilton, Canada in 2008, his FMH in Prevention and Public Health in 2014, and a PhD in Epidemiology in 2018.
+
+## Education
+
+{{< meta education >}}
+:::

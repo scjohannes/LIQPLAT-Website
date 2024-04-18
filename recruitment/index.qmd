@@ -23,6 +23,7 @@ options(
   book.base_size = 14
 )
 
+
 library(ggplot2)
 library(dplyr)
 
@@ -46,7 +47,9 @@ time <- seq(as.Date("2024-05-01"), as.Date("2024-12-31"), by = "months")
 recruited <- seq(from = 10, to = 80, by = 10)
 
 plot <- ggplot(tibble(time, recruited), aes(x = time, y = recruited)) +
-  geom_bar(stat="identity") +
+  geom_point(color = "#068194") +
+  geom_line(color = "#068194") +
+  geom_area(alpha = 0.25, fill = "#068194") +
   scale_x_date(date_breaks = "2 month", date_labels =  "%b %Y") +
   ylab("Cumulative number of patients recruited")
 

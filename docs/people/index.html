@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-clinician .list');
+    const listingTargetEl = window.document.querySelector('#listing-copi .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-clinician'] = new List('listing-clinician', options);
+    window['quarto-listings']['listing-copi'] = new List('listing-copi', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -130,9 +130,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-email","listing-education","listing-subtitle","listing-description","listing-affiliation","listing-image","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -290,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="principal-investigator">Principal Investigator</h2>
 <div id="listing-pi" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
-  <div class="list grid quarto-listing-cols-3"> 
+  <div class="list grid quarto-listing-cols-4"> 
     <div class="g-col-1 listing-box">
       <a href="../people/kasenda-benjamin/index.html" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-left">
@@ -305,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
               Senior Consultant Medical Oncologist<br>
             </div>
               <div class="listing-box-education">
-                  Ph.D. Clinical Epidemiology | University of Basel | 2014 <br> MD | University Witten/Herdecke | 2008<br>
+                  PhD | Clinical Epidemiology | University of Basel | 2014 <br> MD | University Witten/Herdecke | 2008<br>
               </div>  
           </div>  
         </div>  
@@ -318,11 +318,11 @@ No matching items
 </div>
 </div>
 </section>
-<section id="clinicians" class="level2 sand-background">
-<h2 class="anchored" data-anchor-id="clinicians">Clinicians</h2>
-<div id="listing-clinician" class="quarto-listing quarto-listing-container-custom">
+<section id="co-investigators" class="level2 sand-background">
+<h2 class="anchored" data-anchor-id="co-investigators">Co-Investigators</h2>
+<div id="listing-copi" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
-  <div class="list grid quarto-listing-cols-3"> 
+  <div class="list grid quarto-listing-cols-4"> 
     <div class="g-col-1 listing-box">
       <a href="../people/schmitt-andreas/index.html" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-left">
@@ -343,18 +343,6 @@ No matching items
         </div>  
       </a>
     </div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="phd-students" class="level2">
-<h2 class="anchored" data-anchor-id="phd-students">PhD Students</h2>
-<div id="listing-phd" class="quarto-listing quarto-listing-container-custom">
-<div class="quarto-listing quarto-listing-container-grid">
-  <div class="list grid quarto-listing-cols-3"> 
     <div class="g-col-1 listing-box">
       <a href="../people/schwenke-johannes/index.html" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-left">
@@ -382,11 +370,36 @@ No matching items
 </div>
 </div>
 </section>
-<section id="methodologists" class="level2 sand-background">
+<!--- ## PhD Students
+
+::: {#phd}
+:::
+-->
+<section id="methodologists" class="level2">
 <h2 class="anchored" data-anchor-id="methodologists">Methodologists</h2>
 <div id="listing-methodologist" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
-  <div class="list grid quarto-listing-cols-3"> 
+  <div class="list grid quarto-listing-cols-4"> 
+    <div class="g-col-1 listing-box">
+      <a href="../people/matthias-briel/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          <p class="card-img-top">
+            <img alt="Matthias Briel" src="../people/matthias-briel/avatar.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          <div class="card-body post-contents">
+            <div class="listing-box-title">
+              Matthias Briel<br> 
+            </div>
+            <div class="listing-box-subtitle">
+              Deputy Director of the Department of Clinical Research, University Hospital Basel<br>
+            </div>
+              <div class="listing-box-education">
+                  PhD | University of Basel | 2018 <br> MSc | McMaster University | 2008 <br> MD | University of Freiburg | 2000<br>
+              </div>  
+          </div>  
+        </div>  
+      </a>
+    </div>
     <div class="g-col-1 listing-box">
       <a href="../people/hemkens-lars/index.html" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-left">
@@ -434,23 +447,31 @@ No matching items
 </div>
 </div>
 </section>
-<section id="statisticians" class="level2">
+<section id="statisticians" class="level2 sand-background">
 <h2 class="anchored" data-anchor-id="statisticians">Statisticians</h2>
 <div id="listing-statistician" class="quarto-listing quarto-listing-container-custom">
 <div class="quarto-listing quarto-listing-container-grid">
-  <div class="list grid quarto-listing-cols-3"> 
+  <div class="list grid quarto-listing-cols-4"> 
 </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
-
-
-
 </section>
 
-</main> <!-- /main -->
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-phd">
+<div class="quarto-listing quarto-listing-container-grid">
+  <div class="list grid quarto-listing-cols-4"> 
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -691,6 +712,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">© 2024 · Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="../img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>
+  </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/scjohannes/LIQPLAT">
       <i class="bi bi-github" role="img">

@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../img/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,11 +64,42 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-url_source',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-title","listing-date","listing-author","listing-publication","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-issue","listing-page","listing-year","listing-pub_number","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -117,12 +150,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -141,24 +174,59 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="the-languages-of-middle-earth" class="level2">
-<h2 class="anchored" data-anchor-id="the-languages-of-middle-earth">The Languages of Middle-earth</h2>
-<p><img src="project_1_banner.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://arxiv.org/abs/2210.07278', 'blank');"></p>
-<p><a href="https://arxiv.org/abs/2210.07278" target="_blank">arXiv Preprint</a> | <a href="https://github.com/marvinschmitt/MetaUncertaintyPaper" target="_blank">Code</a><br></p>
-<p>Test. Over the centuries, I have devoted countless hours to deciphering and translating the ancient scripts and dialects of the various peoples of Middle-earth. My goal is to gain a deeper understanding of the cultures and histories of these peoples by studying their languages. Currently, I am working on a monograph that explores the linguistic roots of the Elvish languages. Through extensive research and analysis, I hope to shed light on the connections between the different dialects of Elvish and their origins. This project has been particularly challenging, as Elvish is a complex and nuanced language, but I am determined to see it through to completion.</p>
 <hr>
-</section>
-<section id="the-history-of-the-war-of-the-ring" class="level2">
-<h2 class="anchored" data-anchor-id="the-history-of-the-war-of-the-ring">The History of the War of the Ring</h2>
-<p><img src="project_2_banner.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://arxiv.org/abs/2112.08866', 'blank');"></p>
-<p><a href="https://arxiv.org/abs/2112.08866" target="_blank">arXiv Preprint</a> | <a href="https://github.com/marvinschmitt/ModelMisspecificationBF" target="_blank">Code</a><br></p>
-<p>I am creating a comprehensive and detailed history of the conflict that goes beyond the surface-level events. By gathering information from a variety of sources, including my own memories, written accounts, and oral histories, I hope to shed new light on this important period in Middle-earth’s history and provide valuable insights into the motivations and actions of the various players involved.</p>
-<div style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
+<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+    <div class="quarto-post image-right" data-index="0" data-categories="" data-listing-date-sort="1394578800000" data-listing-file-modified-sort="1713425949335" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <div class="thumbnail">
+            <!-- <a href="/publications\2014_001_RCT_Discontinuation\index.qmd"> -->
+                <p>
+                </p>
+            <!-- </a> -->
+        </div>
+        <div class="body">
+            <!-- <a href="/publications\2014_001_RCT_Discontinuation\index.qmd"> -->
+            <div class="no-anchor listing-pub-title listing-title">Prevalence, Characteristics, and Publication of Discontinued Randomized Trials</div>
+            <!-- </a> -->
+            <!-- <a href="/publications\2014_001_RCT_Discontinuation\index.qmd"> -->
+                <div class="listing-pub-author listing-author">
+                    Benjamin Kasenda, Erik von Holm, John You, Anette Blümle, Yuki Tomonaga, Ramon Saccilotto, Alain Amstutz, Theresa Bengough, Joerg J. Meerpohl, Mihaela Stegert, Kari A. O. Tikkinen, Ignacio Neumann, Alonso Carrasco-Labra, Markus Faulhaber, Sohail M. Mulla, Dominik Mertz, Elie A. Akl, Dirk Bassler, Jason W. Busse DC, Ignacio Ferreira-González, Francois Lamontagne, Alain Nordmann, Viktoria Gloy, Heike Raatz, Lorenzo Moja, Rachel Rosenthal, Shanil Ebrahim, Stefan Schandelmaier, Sun Xin, Per O. Vandvik, Bradley C. Johnston, Martin A. Walter, Bernard Burnand, Matthias Schwenkglenks, Lars G. Hemkens, Heiner C. Bucher, Gordon H. Guyatt, Matthias Briel<br> 
+                </div>
+                <div class="metadata-value listing-pub-journal listing-publication">
+                        <i>Journal of the American Medical Association</i>, <b>311.1</b>, 1045-1952 (2014)<br>
+                </div>
+            <!-- </a> -->
+ <!--               <div class="listing-categories">
+                </div>
+                -->
+        </div>
+        <div class="metadata">
+            <!-- <a href="/publications\2014_001_RCT_Discontinuation\index.qmd"> -->
+                <div class="listing-pub-number">
+                    1<br> 
+                </div>
+            <!-- </a> -->
+            <div class="listing-pub-url">
+                    <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-physchem-040214-121612">
+                    <p style="color:#068194;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
+                    </a>
+                </div>
+        </div>
+    </div>
+    </div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -401,6 +469,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">© 2024 · Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="../img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>
+  </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/scjohannes/LIQPLAT">
       <i class="bi bi-github" role="img">

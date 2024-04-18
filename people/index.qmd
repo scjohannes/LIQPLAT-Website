@@ -9,9 +9,9 @@ listing:
     template: ../_ejs/people-box.ejs
     type: grid
     fields: [title, subtitle, image, education]
-  - id: clinician
+  - id: copi
     include: 
-      people_group: "clinician"
+      people_group: "copi"
     exclude:
       external: true
     template: ../_ejs/people-box.ejs
@@ -56,21 +56,22 @@ page-layout: full
 
 
 :::{.sand-background}
-## Clinicians
+## Co-Investigators
 
 
 
-::: {#clinician}
+::: {#copi}
 :::
 
 :::
 
-## PhD Students
+<!--- ## PhD Students
 
 ::: {#phd}
 :::
+-->
 
-:::{.sand-background}
+
 ## Methodologists
 
 
@@ -78,9 +79,11 @@ page-layout: full
 ::: {#methodologist}
 :::
 
-:::
+
+:::{.sand-background}
 
 ## Statisticians
 
 ::: {#statistician}
+:::
 :::

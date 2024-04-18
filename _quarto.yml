@@ -38,6 +38,7 @@ website:
     center: © 2024  &middot; Made with {{< fa brands r-project >}} and 
       [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
     right: 
+      - '<a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="/img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>'
       - icon: github
         href: https://github.com/scjohannes/LIQPLAT
 
