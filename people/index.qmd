@@ -56,7 +56,7 @@ page-layout: full
 
 
 :::{.sand-background}
-## Co-Investigators
+## Investigators
 
 
 
