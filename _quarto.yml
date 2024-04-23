@@ -40,7 +40,7 @@ website:
     right: 
       - '<a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="/img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>'
       - icon: github
-        href: https://github.com/scjohannes/LIQPLAT
+        href: https://github.com/scjohannes/LIQPLAT-Website
 
 project:
   type: website

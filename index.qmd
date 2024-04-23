@@ -6,7 +6,7 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/scjohannes/LIQPLAT
+      href: https://github.com/scjohannes/LIQPLAT-Website
     - icon: envelope
       text: Email
       href: "mailto:johannesmanteo.schwenke@usb.ch"  
