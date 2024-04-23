@@ -35,4 +35,5 @@ Perrine Janiaud, PhD, is a clinical epidemiologist whose work focuses mainly on 
 ## Education
 
 {{< meta education >}}
+
 :::

@@ -35,4 +35,5 @@ Matthias Briel is a physician and clinical epidemiologist with a strong interest
 ## Education
 
 {{< meta education >}}
+
 :::

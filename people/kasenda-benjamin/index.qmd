@@ -35,4 +35,5 @@ Lorem ipsum...
 ## Education
 
 {{< meta education >}}
+
 :::
