@@ -21,5 +21,5 @@ about:
 
 Advanced solid cancers pose a particular challenge for optimal treatment and place a heavy physical and psychological burden on patients. The analysis and integration of liquid biopsies into routine care is a promising avenue to improve care for this patient population.
 
-The LIQPLAT trial is a pragmatic, registry-based trial using routinely collected data investigating the implementation and effects of routinely measuring circulating tumor DNA (ctDNA) from liquid biopsies in patients with advanced solid cancer. We will evaluate the process of implementing ctDNA measurements in routine care, as well as patient relevant relevant outcomes such as quality of life and survival.
+The LIQPLAT trial is a pragmatic single-arm trial using routinely collected data and investigating the implementation and effects of routinely measuring circulating tumor DNA (ctDNA) from liquid biopsies in patients with advanced solid cancer. We will evaluate the process of implementing ctDNA measurements in routine care, as well as patient relevant relevant outcomes such as quality of life and survival.
 
