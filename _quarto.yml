@@ -1,11 +1,10 @@
 # website settings
 website:
-  title: "LIQPLAT"                                # Your name
-  description: "Liquid biopsy platform for advanced cancer patients"   # A brief slogan (optional)
+  title: "LIQPLAT"
+  description: "Liquid biopsy platform for advanced cancer patients"
   image: img/my_image.jpg
   favicon: img/favicon.png
   
-  # start of the navigation bar at the top of the website
   navbar:
     pinned: false
     logo: /img/logo.png
@@ -20,7 +19,6 @@ website:
         href: recruitment/index.qmd
       - text: "About"
         href: about/index.qmd
-      
     
 
     right:
@@ -32,13 +30,14 @@ website:
   search: 
     location: navbar
     type: textbox
+    
   page-footer: 
     left: |
       <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
     center: © 2024  &middot; Made with {{< fa brands r-project >}} and 
       [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
     right: 
-      - '<a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="/img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>'
+      #- '<a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="/img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>'
       - icon: github
         href: https://github.com/scjohannes/LIQPLAT-Website
 
