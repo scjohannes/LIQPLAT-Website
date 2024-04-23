@@ -56,7 +56,7 @@ page-layout: full
 
 
 :::{.sand-background}
-## Co-Investigators
+## Investigators
 
 
 
@@ -87,3 +87,6 @@ page-layout: full
 ::: {#statistician}
 :::
 :::
+
+
+## Collaborators
