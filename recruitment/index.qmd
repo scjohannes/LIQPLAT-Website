@@ -10,6 +10,9 @@ execute:
 #| include: false
 
 library(ggokabeito)
+library(ggplot2)
+library(tidyverse)
+library(lubridate)
 
 options(
   # set default colors in ggplot2 to colorblind-friendly
@@ -24,8 +27,7 @@ options(
 )
 
 
-library(ggplot2)
-library(dplyr)
+
 
 # set default theme
 theme_set(
@@ -43,15 +45,41 @@ theme_set(
 Lorem ipsum.
 
 ```{r}
-time <- seq(as.Date("2024-05-01"), as.Date("2024-12-31"), by = "months")
-recruited <- seq(from = 10, to = 80, by = 10)
+recruitment_data <- read.csv("data/recruitment_data.csv")
 
-plot <- ggplot(tibble(time, recruited), aes(x = time, y = recruited)) +
-  geom_point(color = "#068194") +
-  geom_line(color = "#068194") +
-  geom_area(alpha = 0.25, fill = "#068194") +
-  scale_x_date(date_breaks = "2 month", date_labels =  "%b %Y") +
-  ylab("Cumulative number of patients recruited")
+random_data <- recruitment_data %>%
+  select(random_date) %>%
+  mutate(random_date = as_date(random_date)) %>%
+  arrange(random_date) %>%
+  mutate(n = row_number(),
+         group = "Random Selection") #random selection
+
+uptake_data <- recruitment_data %>%
+  mutate(icf_date = as_date(icddate)) %>%
+  select(icf_date) %>%
+  filter(!is.na(icf_date)) %>%
+  arrange(icf_date) %>%
+  mutate(n = row_number(),
+         group = "Informed Consent")
+
+plot <- ggplot() +
+  #graphing random selection
+  geom_point(data = random_data, aes(x = random_date, y = n, color = group)) +
+  geom_line(data = random_data, aes(x = random_date, y = n, color = group)) +
+  geom_area(data = random_data, aes(x = random_date, y = n, fill = group), alpha = 0.25) +
+  #graphing uptake
+  geom_point(data = uptake_data, aes(x = icf_date, y = n, color = group)) +
+  geom_line(data = uptake_data, aes(x = icf_date, y = n, color = group)) +
+  geom_area(data = uptake_data, aes(x = icf_date, y = n, fill = group), alpha = 0.5) +
+  geom_hline(yintercept = 125, linetype = "dashed", color = "#e69f00") +
+  #style
+  scale_x_date(date_breaks = "1 month", date_labels =  "%b %Y", limits = c(as.Date("2024-04-29"), as.Date("2024-12-30"))) +
+  scale_y_continuous(limits = c(0, 125), breaks = scales::pretty_breaks(n = 5)) +
+  ylab("number of patients") +
+  xlab("") +
+  guides(color = guide_legend(title = NULL), fill = guide_legend(title = NULL)) + #remove legend title
+  annotate("text", x = as.Date("2024-08-30"), y = 115, label = "target of consented patients", color = "#e69f00", size = 5, hjust = 0.5) #hjust 0 --> left aligned
+  #theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 plot
 ```

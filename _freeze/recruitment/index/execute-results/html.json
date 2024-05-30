@@ -1,5 +1,5 @@
 {
-  "hash": "cd54ef302ca4b939368a36f477af32df",
+  "hash": "594cb3a0add57ee28f0d71a4b318a617",
   "result": {
     "engine": "knitr",
     "markdown": "---\ntitle: \"Recruitment\"\nformat: html\nexecute: \n  echo: false  \n---\n\n\n\n\nLorem ipsum.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n::: {layout-ncol=\"2\"}\nLorem ipsum....\n:::\n\n",
