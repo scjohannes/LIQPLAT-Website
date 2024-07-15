@@ -5,7 +5,7 @@ execute:
   echo: false  
 ---
 
-```{r}
+```{r setup}
 #| label: load-packages
 #| include: false
 
@@ -39,7 +39,12 @@ theme_set(
 )
 ```
 
-```{r}
+```{r fig-1}
+#| echo: true
+#| fig-cap: "Recruitment"
+#| fig-width: 10
+#| fig-height: 6
+
 file_info <- file.info("data/recruitment_data.csv")
 recruitment_data <- read.csv("data/recruitment_data.csv")
 
