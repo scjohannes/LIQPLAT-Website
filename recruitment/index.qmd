@@ -26,9 +26,6 @@ options(
   book.base_size = 14
 )
 
-
-
-
 # set default theme
 theme_set(
   theme_minimal(
@@ -42,9 +39,8 @@ theme_set(
 )
 ```
 
-Lorem ipsum.
-
 ```{r}
+file_info <- file.info("data/recruitment_data.csv")
 recruitment_data <- read.csv("data/recruitment_data.csv")
 
 random_data <- recruitment_data %>%
@@ -52,15 +48,15 @@ random_data <- recruitment_data %>%
   mutate(random_date = as_date(random_date)) %>%
   arrange(random_date) %>%
   mutate(n = row_number(),
-         group = "Random Selection") #random selection
+         group = "Random selection for invitation to the trial") #random selection
 
 uptake_data <- recruitment_data %>%
   mutate(icf_date = as_date(icddate)) %>%
+  filter(!is.na(icf_date) & icf_reg == 1) %>%
   select(icf_date) %>%
-  filter(!is.na(icf_date)) %>%
   arrange(icf_date) %>%
   mutate(n = row_number(),
-         group = "Informed Consent")
+         group = "Informed consent signed")
 
 plot <- ggplot() +
   #graphing random selection
@@ -71,20 +67,17 @@ plot <- ggplot() +
   geom_point(data = uptake_data, aes(x = icf_date, y = n, color = group)) +
   geom_line(data = uptake_data, aes(x = icf_date, y = n, color = group)) +
   geom_area(data = uptake_data, aes(x = icf_date, y = n, fill = group), alpha = 0.5) +
-  geom_hline(yintercept = 125, linetype = "dashed", color = "#e69f00") +
+  geom_hline(yintercept = 150, linetype = "dashed", color = "#e69f00") +
   #style
   scale_x_date(date_breaks = "1 month", date_labels =  "%b %Y", limits = c(as.Date("2024-04-29"), as.Date("2024-12-30"))) +
-  scale_y_continuous(limits = c(0, 125), breaks = scales::pretty_breaks(n = 5)) +
+  scale_y_continuous(limits = c(0, 150), breaks = scales::pretty_breaks(n = 6)) +
   ylab("number of patients") +
   xlab("") +
   guides(color = guide_legend(title = NULL), fill = guide_legend(title = NULL)) + #remove legend title
-  annotate("text", x = as.Date("2024-08-30"), y = 115, label = "target of consented patients", color = "#e69f00", size = 5, hjust = 0.5) #hjust 0 --> left aligned
-  #theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  annotate("text", x = as.Date("2024-08-30"), y = 142.5, label = "target of consented patients", color = "#e69f00", size = 5, hjust = 0.5) #hjust 0 --> left aligned
+#theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 plot
 ```
 
-::: {layout-ncol="2"}
-Lorem ipsum....
-:::
-
+Eligible patients at the Division of Medical Oncology at the Universtiy Hospital Basel are randomly invited to participate in the LIQPLAT trial. We aim to successfully recruit 150 participants within 18 months. As of `r as.Date(file_info$ctime)`, `r nrow(uptake_data)` patients have agreed to participate in the trial.
