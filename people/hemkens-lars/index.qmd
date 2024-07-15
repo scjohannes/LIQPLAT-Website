@@ -2,7 +2,7 @@
 title: &TITLE Lars G. Hemkens
 last: Hemkens
 first: Lars G.
-people_group: "methodologist"
+people_group: "any"
 email: "lars.hemkens@usb.ch"
 education:
   - MD | The Philipp University of Marburg | XXXX <br> MPH | University of Düsseldorf | XXXX

@@ -1,8 +1,8 @@
 {
-  "hash": "594cb3a0add57ee28f0d71a4b318a617",
+  "hash": "ed2d3abca4c3a506624fc084bbc9c57d",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Recruitment\"\nformat: html\nexecute: \n  echo: false  \n---\n\n\n\n\nLorem ipsum.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n::: {layout-ncol=\"2\"}\nLorem ipsum....\n:::\n\n",
+    "markdown": "---\ntitle: \"Recruitment\"\nformat: html\nexecute: \n  echo: false  \n---\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\nEligible patients at the Division of Medical Oncology at the Universtiy Hospital Basel are randomly invited to participate in the LIQPLAT trial. We aim to successfully recruit 150 participants within 18 months. As of 2024-07-15, 20 patients have agreed to participate in the trial.\n",
     "supporting": [
       "index_files"
     ],

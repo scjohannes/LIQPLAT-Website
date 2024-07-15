@@ -2,7 +2,7 @@
 title: &TITLE Matthias Briel
 last: Briel
 first: Matthias
-people_group: "methodologist"
+people_group: "any"
 email: "matthias.briel@usb.ch"
 education:
   - PhD | University of Basel | 2018 <br> MSc | McMaster University | 2008 <br> MD | University of Freiburg | 2000

@@ -22,6 +22,9 @@ website:
     
 
     right:
+      - icon: folder
+        aria-label: registry
+        href: https://clinicaltrials.gov/study/NCT06367751
       - icon: envelope
         aria-label: email
         href: "mailto:johannesmanteo.schwenke@usb.ch"  

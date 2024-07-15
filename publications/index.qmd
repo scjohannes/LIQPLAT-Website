@@ -1,17 +1,20 @@
 ---
 title: "Publications"
-listing:
-  - id: pubs
-    template: ../_ejs/publications.ejs
-    contents: ../publications/**/*.qmd
-    sort: "pub_number desc"
-    page-size: 30
-    filter-ui: true
-    fields: [image, pub_number, title, publication, author,url_source]
+#listing:
+#  - id: pubs
+#    template: ../_ejs/publications.ejs
+#    contents: ../publications/**/*.qmd
+#    sort: "pub_number desc"
+#    page-size: 30
+#    filter-ui: true
+#    fields: [image, pub_number, title, publication, author,url_source]
 page-layout: full
 ---
 
 <hr>
+Publications including pre-prints will be listed here.
 
+
+<!---
 :::{#pubs}
-:::
+::: --->

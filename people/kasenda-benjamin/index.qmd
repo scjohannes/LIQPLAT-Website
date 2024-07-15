@@ -2,7 +2,7 @@
 title: &TITLE Benjamin Kasenda
 last: Kasenda
 first: Benjamin
-people_group: "pi"
+people_group: "any"
 email: "benjamin.kasenda@usb.ch"
 education:
   - PhD | Clinical Epidemiology | University of Basel | 2014 <br> MD | University Witten/Herdecke | 2008
@@ -24,6 +24,7 @@ about:
     - text: Google Scholar
       icon: mortarboard 
       href: https://scholar.google.co.uk/citations?user=on48AJMAAAAJ&hl=de
+    
 ---
 <hr>
 ::: {#about}
