@@ -4,8 +4,7 @@ last: Hemkens
 first: Lars G.
 people_group: "any"
 email: "lars.hemkens@usb.ch"
-education:
-  - MD | The Philipp University of Marburg | XXXX <br> MPH | University of Düsseldorf | XXXX
+education: ""
 subtitle: "Senior Scientist, Department of Clinical Research, University of Basel <br>
 Lead Pragmatic Trials and Real World Evidence <br>
 RC2NB - Research Center for Clinical Neuroimmunology and Neuroscience Basel"
@@ -26,16 +25,12 @@ about:
     - text: Google Scholar
       icon: mortarboard 
       href: https://scholar.google.com/citations?user=dAVerHUAAAAJ&hl=en
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0002-3444-1432
 ---
 <hr>
 ::: {#about}
 
-
-
-Lorem ipsum...
-
-## Education
-
-{{< meta education >}}
+More information about Lars and his work can be found [here](https://pragmatic-evidence.org/about-us/).
 
 :::

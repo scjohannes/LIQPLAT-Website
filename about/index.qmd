@@ -3,6 +3,6 @@ title: About
 page-layout: full
 ---
 
-This trial is currently being funded by the [Krebsliga beider Basel](https://basel.krebsliga.ch/) (KLbB-5845-02-2023) and the Division of Medical Oncology.
+This trial is currently being funded by the [Krebsliga beider Basel](https://basel.krebsliga.ch/) (KLbB-5845-02-2023) and the [Division of Medical Oncology](https://www.unispital-basel.ch/en/onkologie).
 
 We used [Marvin Schmitt's](https://www.marvinschmitt.com/) template for this website.

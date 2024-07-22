@@ -28,9 +28,9 @@ about:
 <hr>
 ::: {#about}
 
-
-
 Matthias Briel is a physician and clinical epidemiologist with a strong interest in clinical trial methodology and meta-epidemiological research. He received his Dr. med. from the University of Freiburg for electrophysiological work on cystic fibrosis in 2000, completed an MSc in Health Research Methodology at McMaster University in Hamilton, Canada in 2008, his FMH in Prevention and Public Health in 2014, and a PhD in Epidemiology in 2018.
+
+More information about his research and his research group can be found [here](https://dkf.unibas.ch/de/forschungsgruppen/forschungschwerpunkte/klinische-epidemiologie-public-health-health-systems/forschungsgruppe-briel-m/).
 
 ## Education
 
