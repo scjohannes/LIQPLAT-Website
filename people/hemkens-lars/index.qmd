@@ -5,8 +5,8 @@ first: Lars G.
 people_group: "any"
 email: "lars.hemkens@usb.ch"
 education: ""
-subtitle: "Senior Scientist, Department of Clinical Research, University of Basel <br>
-Lead Pragmatic Trials and Real World Evidence <br>
+subtitle: "Research Group Leader Principal <br>
+Pragmatic Evidene Lab <br>
 RC2NB - Research Center for Clinical Neuroimmunology and Neuroscience Basel"
 description: ""
 project: ""

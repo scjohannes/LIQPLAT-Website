@@ -5,7 +5,7 @@ first: Andreas Michael
 people_group: "any"
 email: "andreasmichael.schmitt@usb.ch"
 education:
-  - MD | University of XXXXX | 2014
+  - MD | Johannes Gutenberg University Mainz | 2014
 subtitle: "Junior Attending Physician (Medical Oncology)"
 description: ""
 project: ""
@@ -28,9 +28,6 @@ about:
 <hr>
 ::: {#about}
 
-
-
-Lorem ipsum...
 
 ## Education
 
