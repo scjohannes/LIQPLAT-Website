@@ -6,8 +6,8 @@ people_group: "any"
 email: "matthias.briel@usb.ch"
 education:
   - PhD | University of Basel | 2018 <br> MSc | McMaster University | 2008 <br> MD | University of Freiburg | 2000
-subtitle: "Deputy Director of the Department of Clinical Research, University Hospital Basel"
-description: ""
+subtitle: "Clinical Epidemiology"
+description: "Deputy Director of the Department of Clinical Research, University Hospital Basel"
 project: ""
 affiliation: University Hospital Basel
 image: avatar.png

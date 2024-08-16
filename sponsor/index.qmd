@@ -1,0 +1,7 @@
+---
+title: Sponsor
+page-layout: full
+---
+
+-   Sponsor: [University Hospital Basel](https://www.unispital-basel.ch/)
+-   Sponsor-Investigator: [Benjamin Kasenda, MD-PhD Medical Oncology](../people/kasenda-benjamin/index.qmd)

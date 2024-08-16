@@ -6,8 +6,8 @@ people_group: "any"
 email: "johannesmanteo.schwenke@usb.ch"
 education:
   - MD | University of Basel | 2022
-subtitle: "PhD Student in Clinical Epidemiology"
-description: ""
+subtitle:  "Clinical Epidemiology"
+description: "MD-PhD Student"
 project: ""
 affiliation: University of Basel
 image: avatar.png

@@ -1,0 +1,12 @@
+---
+title: Funding
+page-layout: full
+---
+
+Current funding:
+
+-   [Krebsliga beider Basel](https://basel.krebsliga.ch/) (KLbB-5845-02-2023),
+
+-   The [Division of Medical Oncology](https://www.unispital-basel.ch/en/onkologie)
+
+-   [Johannes Schwenke's](../people/schwenke-johannes/index.qmd) work on the LIQPLAT trial is funded by the Swiss National Science Foundation (323530_229969)

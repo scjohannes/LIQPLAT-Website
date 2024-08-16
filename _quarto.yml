@@ -17,6 +17,10 @@ website:
         href: publications/index.qmd
       - text: "Recruitment"
         href: recruitment/index.qmd
+      - text: "Sponsor"
+        href: sponsor/index.qmd
+      - text: "Funding"
+        href: funding/index.qmd
       - text: "About"
         href: about/index.qmd
     
