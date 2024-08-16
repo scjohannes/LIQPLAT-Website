@@ -5,10 +5,8 @@ first: Lars G.
 people_group: "any"
 email: "lars.hemkens@usb.ch"
 education: ""
-subtitle: "Research Group Leader Principal <br>
-Pragmatic Evidene Lab <br>
-RC2NB - Research Center for Clinical Neuroimmunology and Neuroscience Basel"
-description: ""
+subtitle: "Pragmatic Evidene Lab - RC2NB"
+description: "Research Group Leader Principal"
 project: ""
 affiliation: University of Basel
 image: avatar.png

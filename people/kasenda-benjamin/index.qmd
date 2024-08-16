@@ -6,8 +6,8 @@ people_group: "any"
 email: "benjamin.kasenda@usb.ch"
 education:
   - PhD | Clinical Epidemiology | University of Basel | 2014 <br> MD | University Witten/Herdecke | 2008
-subtitle: "Senior Consultant Medical Oncologist"
-description: ""
+subtitle: "Medical Oncology"
+description: "Senior Consultant Medical Oncologist"
 project: ""
 affiliation: University of Basel
 image: avatar.png
@@ -30,8 +30,6 @@ about:
 ::: {#about}
 
 
-
-Lorem ipsum...
 
 ## Education
 
