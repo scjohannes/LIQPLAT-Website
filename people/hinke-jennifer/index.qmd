@@ -1,0 +1,35 @@
+---
+title: &TITLE Jennifer Hinke
+last: Hinke
+first: Jennifer
+people_group: "any"
+email: "jennifer.hinke@usb.ch"
+education:
+  - MSc | Molecular Health Science | ETH Zurich | 2023
+subtitle: "Medical Oncology"
+description: "Trial Coordinator"
+project: ""
+affiliation: University Hospital of Basel
+image: avatar.png
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:jennifer.hinke@usb.ch 
+    
+---
+<hr>
+::: {#about}
+
+Jennifer is a clinical research coordinator at the medical oncology department, focusing mainly on the implementation of lung cancer studies. Before joining the University Hospital Basel, she completed her master thesis at the ETH Department of Biosystems Science and Engineering. There she applied single-cell RNA sequencing and transcriptomic analysis to investigate 3D in vitro models of a rare neurodegenerative disease.
+
+## Education
+
+{{< meta education >}}
+
+:::
