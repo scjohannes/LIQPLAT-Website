@@ -5,7 +5,7 @@ first: Lars G.
 people_group: "any"
 email: "lars.hemkens@usb.ch"
 education: ""
-subtitle: "Pragmatic Evidene Lab - RC2NB"
+subtitle: "Pragmatic Evidence Lab - RC2NB"
 description: "Research Group Leader Principal"
 project: ""
 affiliation: University of Basel

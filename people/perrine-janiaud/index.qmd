@@ -6,7 +6,7 @@ people_group: "any"
 email: "PerrineMarineCharlotte.Janiaud@usb.ch"
 education:
   - PhD | Université Claude Bernard, Lyon, France | 2017 <br> 
-subtitle: "Pragmatic Evidene Lab - RC2NB"
+subtitle: "Pragmatic Evidence Lab - RC2NB"
 description: "Senior Researcher"
 project: ""
 affiliation: University of Basel and University Hospital Basel 
