@@ -67,7 +67,6 @@ format:
     theme: 
       - pulse
       - html/styles.scss
-    mainfont: Lato
     toc: false
     code-link: true
     code-fold: true
