@@ -68,9 +68,9 @@ format:
       - pulse
       - html/styles.scss
     toc: false
-    code-link: true
+    code-link: false
     code-fold: true
-    code-tools: true
+    code-tools: false
     anchor-sections: true
     fig-cap-location: margin
     fig-format: svg
