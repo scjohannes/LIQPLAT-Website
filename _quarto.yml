@@ -51,6 +51,9 @@ website:
 project:
   type: website
   output-dir: docs
+  resources:
+    - CNAME
+  
 
   preview: 
     port: 22222
