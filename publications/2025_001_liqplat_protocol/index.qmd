@@ -1,0 +1,16 @@
+---
+title: "The implementation of liquid biopsies in routine care of patients with advanced solid cancer (LIQPLAT): a study protocol for a single arm trial"
+date: 2025-02-13
+author: ["Johannes M. Schwenke", "Andreas M. Schmitt", "Perrine Janiaud", "Heinz Laeubli", "Mascha Binder", "Ilaria Alborelli", "Matthias S. Matter", "Jennifer Hinke", "Corinne C. Widmer", "Lars G. Hemkens", "Benjamin Kasenda"]
+publication: 
+categories: []
+url_source: 
+url_preprint: https://www.medrxiv.org/content/10.1101/2025.02.13.25322206v1
+journ: "medRxiv"
+issue: 
+page: 
+year: 2025
+pub_number: 1
+---
+
+
