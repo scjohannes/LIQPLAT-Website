@@ -9,45 +9,16 @@ execute:
 #| label: load-packages
 #| include: false
 
-library(ggokabeito)
-library(ggplot2)
+library(plotly)
 library(tidyverse)
 library(lubridate)
-
-# Create custom palette based on Okabe-Ito but with specified first colors
-custom_palette <- c("#068194", "#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
-
-
-options(
-  # set default colors in ggplot2 to colorblind-friendly
-  # Okabe-Ito and Viridis palettes
-  ggplot2.discrete.colour = custom_palette,
-  ggplot2.discrete.fill = custom_palette,
-  ggplot2.continuous.colour = "viridis",
-  ggplot2.continuous.fill = "viridis",
-  # set theme font and size
-  book.base_family = "sans",
-  book.base_size = 14
-)
-
-# set default theme
-theme_set(
-  theme_minimal(
-    base_size = getOption("book.base_size"),
-    base_family = getOption("book.base_family")
-  ) %+replace%
-    theme(
-      panel.grid.minor = element_blank(),
-      legend.position = "bottom"
-    )
-)
 ```
 
 ```{r fig-1}
 #| echo: true
 #| fig-cap: "Recruitment"
 #| fig-width: 10
-#| fig-height: 6
+#| fig-height: 8
 
 file_info <- file.info("data/recruitment_data.csv")
 recruitment_data <- read.csv("data/recruitment_data.csv")
@@ -67,36 +38,84 @@ uptake_data <- recruitment_data  |>
   mutate(n = row_number(),
          group = "Informed consent signed")
 
-plot <- ggplot() +
-  #graphing random selection
-  geom_point(data = random_data, aes(x = random_date, y = n, color = group)) +
-  geom_line(data = random_data, aes(x = random_date, y = n, color = group)) +
-  geom_area(data = random_data, aes(x = random_date, y = n, fill = group), alpha = 0.1) +
-  #graphing uptake
-  geom_point(data = uptake_data, aes(x = icf_date, y = n, color = group)) +
-  geom_line(data = uptake_data, aes(x = icf_date, y = n, color = group)) +
-  geom_area(data = uptake_data, aes(x = icf_date, y = n, fill = group), alpha = 0.5) +
-  geom_hline(yintercept = 150, linetype = "solid", color = custom_palette[1], linewidth = 1) +
-  #style
-  scale_x_date(date_breaks = "3 months", date_labels =  "%b %Y", limits = c(as.Date("2024-04-29"), as.Date("2025-10-31"))) +
-  scale_y_continuous(limits = c(0, 160), 
-                    breaks = c(0, 50, 100, 150),  # All the labels we want
-                    minor_breaks = seq(0, 150, 25),  # Minor gridlines stopping at 140
-                    labels = c("0", "50", "100", "150")) +
-  ylab("number of patients") +
-  xlab("") +
-  guides(color = guide_legend(title = NULL), fill = guide_legend(title = NULL)) +
-  annotate("rect", 
-           xmin = as.Date("2024-05-30"), xmax = as.Date("2024-12-01"),  # Adjust these dates
-           ymin = 145, ymax = 155,  # Adjust these values to fit your text
-           fill = "white") +
-  annotate("text", x = as.Date("2024-08-30"), 
-           y = 150, label = "target of consented patients", 
-           color = custom_palette[1], size = 5, 
-           hjust = 0.5, vjust = 0.3) +
-  theme(
-    panel.grid.minor.y = element_line(color = "gray95"),
-    panel.grid.major.y = element_line(color = "gray80")
+plot <- plot_ly() %>%
+  # Random selection traces
+  add_trace(
+    data = random_data,
+    x = ~random_date,
+    y = ~n,
+    type = 'scatter',
+    mode = 'lines+markers',
+    name = ~group,
+    line = list(color = '#000000'),
+    marker = list(color = '#000000'),
+    fillcolor = 'rgba(0, 0, 0, 0.1)',
+    fill = 'tonexty'
+  ) %>%
+  
+  # Uptake traces
+  add_trace(
+    data = uptake_data,
+    x = ~icf_date,
+    y = ~n,
+    type = 'scatter',
+    mode = 'lines+markers',
+    name = ~paste(group, "(Uptake)"),
+    line = list(color = '#068194'),
+    marker = list(color = '#068194'),
+    fillcolor = 'rgba(6, 129, 148, 0.5)',
+    fill = 'tozeroy'
+  ) %>%
+  
+  # Layout configurations
+  layout(
+    shapes = list(
+      list(
+        type = "line",
+        y0 = 150,
+        y1 = 150,
+        x0 = 0,
+        x1 = 1,
+        xref = "paper",
+        line = list(color = '#068194', dash = 'dash')
+      )
+    ),
+    annotations = list(
+      list(
+        x = 0.5,  # Position at right end of plot
+        y = 145,
+        xref = "paper",
+        text = "recruitment target",
+        showarrow = FALSE,
+        xanchor = "middle", 
+        font = list(color = '#068194',
+                    size = 19)
+      )
+    ),
+    xaxis = list(
+      title = "",
+      tickformat = "%b %Y",
+      dtick = "M3" # 3-month intervals
+    ),
+    yaxis = list(
+      title = "number of patients",
+      range = c(0, 160),
+      tickvals = c(0, 50, 100, 150),
+      ticktext = c("0", "50", "100", "150"),
+      gridcolor = "gray80",
+      minorgridcolor = "gray95",
+      minorgridcount = 5  # This will create minor gridlines at 25-unit intervals
+    ),
+    showlegend = TRUE,
+    legend = list(
+      orientation = "h",
+      xanchor = "center",
+      x = 0.5,
+      y = -0.2
+    ),
+    # Use a clean white theme similar to theme_minimal
+    plot_bgcolor = "white",
+    paper_bgcolor = "white"
   )
 
 plot
