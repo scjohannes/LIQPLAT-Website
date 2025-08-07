@@ -41,7 +41,7 @@ website:
   page-footer: 
     left: |
       <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
-    center: © 2024  &middot; Made with {{< fa brands r-project >}} and 
+    center: © 2025  &middot; Made with {{< fa brands r-project >}} and 
       [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)
     right: 
       #- '<a href="https://www.unispital-basel.ch/onkologie" target="_blank"><img src="/img/usb_logo.svg" alt="University Hospital Basel" style="width: 150px; height: auto; float: right; margin-right: 50px;"></a>'
