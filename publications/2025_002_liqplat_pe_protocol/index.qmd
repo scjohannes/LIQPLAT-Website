@@ -1,0 +1,14 @@
+---
+title: "Mixed-methods process evaluation of ctDNA use to guide decision-making in patients with advanced solid cancers: study protocol for a substudy of the LIQPLAT trial"
+date: 2025-10-28
+author: ["Johannes M. Schwenke", "Andreas M. Schmitt", "Stuart McLennan", "Perrine Janiaud", "Heinz Läubli", "Mascha Binder", "Ilaria Alborelli", "Matthias S. Matter", "Jennifer Hinke", "Corinne C. Widmer", "Lars G. Hemkens", "Benjamin Kasenda", "Matthias Briel"]
+publication: 
+categories: []
+url_source: https://bmjopen.bmj.com/lookup/doi/10.1136/bmjopen-2025-100537
+url_preprint: 
+journ: "BMJ Open"
+issue: 10
+page: "e100537"
+year: 2025
+pub_number: 2
+---
